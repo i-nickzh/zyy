@@ -9,6 +9,7 @@ import io.netty.util.CharsetUtil;
                                         //简单通道输入处理器
 public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
 
+
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
         if(msg instanceof HttpRequest){
